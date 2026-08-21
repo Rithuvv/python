@@ -1,0 +1,728 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f7f9fc;
+
+    color: #172033;
+}
+
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar {
+    height: 70px;
+
+    background: white;
+
+    border-bottom:
+        1px solid #e5e7eb;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+}
+
+
+.logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    font-size: 16px;
+}
+
+
+.logo-mark {
+    width: 22px;
+
+    height: 22px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 2px;
+}
+
+
+.logo-mark span {
+    background: #2563eb;
+}
+
+
+.home-btn {
+    border: none;
+
+    background: transparent;
+
+    color: #667085;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+.home-btn:hover {
+    color: #2563eb;
+}
+
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding:
+        80px 25px 55px;
+}
+
+
+.eyebrow {
+    color: #2563eb;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.6px;
+
+    margin-bottom: 15px;
+}
+
+
+.hero h1 {
+    font-size: 55px;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 22px;
+}
+
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+
+.hero p {
+    max-width: 600px;
+
+    margin: auto;
+
+    color: #667085;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================
+   DOMAIN SECTION
+   ========================= */
+
+.domain-section {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding:
+        0 25px 80px;
+}
+
+
+.domain-section h2 {
+    font-size: 26px;
+
+    margin-bottom: 7px;
+}
+
+
+.section-subtitle {
+    color: #667085;
+
+    margin-bottom: 25px;
+}
+
+
+.domain-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.domain-card {
+    border:
+        1px solid #e2e6ed;
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 27px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    color: #172033;
+
+    transition:
+        .2s;
+}
+
+
+.domain-card:hover {
+    transform:
+        translateY(-4px);
+
+    border-color:
+        #2563eb;
+
+    box-shadow:
+        0 12px 30px
+        rgba(15, 23, 42, .07);
+}
+
+
+.domain-icon {
+    width: 46px;
+
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #eff6ff;
+
+    border-radius: 11px;
+
+    font-size: 24px;
+
+    margin-bottom: 20px;
+}
+
+
+.domain-card h3 {
+    font-size: 20px;
+
+    margin-bottom: 9px;
+}
+
+
+.domain-card p {
+    color: #667085;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    min-height: 43px;
+
+    margin-bottom: 20px;
+}
+
+
+.domain-card span {
+    color: #2563eb;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+
+/* =========================
+   PATH PAGE
+   ========================= */
+
+.path-section {
+    display: none;
+}
+
+
+.path-wrapper {
+    max-width: 950px;
+
+    margin: auto;
+
+    padding:
+        50px 25px 80px;
+}
+
+
+.back-btn {
+    border: none;
+
+    background: transparent;
+
+    color: #2563eb;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    margin-bottom: 35px;
+}
+
+
+.path-header {
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 28px;
+}
+
+
+.path-header h1 {
+    font-size: 42px;
+
+    margin-bottom: 8px;
+}
+
+
+.path-header p {
+    color: #667085;
+
+    font-size: 15px;
+}
+
+
+
+/* =========================
+   PROGRESS
+   ========================= */
+
+.progress-card {
+    width: 220px;
+
+    background: white;
+
+    border:
+        1px solid #e2e6ed;
+
+    border-radius: 12px;
+
+    padding: 16px;
+}
+
+
+.progress-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 13px;
+
+    color: #667085;
+
+    margin-bottom: 12px;
+}
+
+
+.progress-top strong {
+    color: #2563eb;
+}
+
+
+.progress-bar {
+    height: 7px;
+
+    background: #e9edf3;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+#progressFill {
+    width: 0%;
+
+    height: 100%;
+
+    background: #2563eb;
+
+    transition:
+        width .35s;
+}
+
+
+
+/* =========================
+   AI BOX
+   ========================= */
+
+.ai-box {
+    display: flex;
+
+    gap: 15px;
+
+    background: #eff6ff;
+
+    border:
+        1px solid #dbeafe;
+
+    border-radius: 13px;
+
+    padding: 18px;
+
+    margin-bottom: 28px;
+}
+
+
+.ai-symbol {
+    width: 36px;
+
+    height: 36px;
+
+    background: white;
+
+    border-radius: 9px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #2563eb;
+
+    flex-shrink: 0;
+}
+
+
+.ai-box strong {
+    color: #1d4ed8;
+
+    font-size: 14px;
+}
+
+
+.ai-box p {
+    color: #475467;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-top: 5px;
+}
+
+
+
+/* =========================
+   CERTIFICATION CARD
+   ========================= */
+
+.path-container {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.cert-card {
+    background: white;
+
+    border:
+        1px solid #e2e6ed;
+
+    border-radius: 14px;
+
+    padding: 23px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    transition:
+        .2s;
+}
+
+
+.cert-card:hover {
+    box-shadow:
+        0 8px 25px
+        rgba(15, 23, 42, .05);
+}
+
+
+.cert-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+}
+
+
+.step-number {
+    width: 42px;
+
+    height: 42px;
+
+    background: #f1f5f9;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 700;
+
+    flex-shrink: 0;
+}
+
+
+.cert-card h3 {
+    font-size: 16px;
+
+    margin-bottom: 7px;
+}
+
+
+.cert-card p {
+    color: #667085;
+
+    font-size: 13px;
+
+    line-height: 1.45;
+
+    max-width: 600px;
+}
+
+
+
+/* =========================
+   STATUS
+   ========================= */
+
+.status {
+    display: inline-block;
+
+    margin-top: 9px;
+
+    padding:
+        5px 9px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+.status.available {
+    background: #dcfce7;
+
+    color: #15803d;
+}
+
+
+.status.completed {
+    background: #dbeafe;
+
+    color: #1d4ed8;
+}
+
+
+.status.locked {
+    background: #f1f5f9;
+
+    color: #64748b;
+}
+
+
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.complete-btn {
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding:
+        10px 15px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+
+.complete-btn:hover {
+    background: #1d4ed8;
+}
+
+
+.complete-btn:disabled {
+    background: #dbe1ea;
+
+    color: #7b8494;
+
+    cursor: not-allowed;
+}
+
+
+
+/* =========================
+   CONNECTOR
+   ========================= */
+
+.connector {
+    width: 2px;
+
+    height: 20px;
+
+    background: #d6dbe4;
+
+    margin-left: 43px;
+}
+
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 750px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+
+    .domain-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .path-header {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .progress-card {
+        width: 100%;
+    }
+
+
+    .path-header h1 {
+        font-size: 34px;
+    }
+
+
+    .cert-card {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .complete-btn {
+        width: 100%;
+    }
+
+}
+/* =================================
+   CERTIFICATE ACTIONS
+================================= */
+
+.cert-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+}
+
+
+/* Start Learning button */
+
+.start-learning-btn {
+    display: inline-block;
+
+    padding: 10px 16px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    font-weight: 600;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+/* Make sure buttons don't look cramped */
+
+.complete-btn,
+.start-learning-btn {
+    min-width: 160px;
+}

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Microsoft Learning Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+         ========================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-mark">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <strong>Microsoft Learning Hub</strong>
+
+        </div>
+
+
+        <button
+            class="home-btn"
+            onclick="goHome()">
+
+            Home
+
+        </button>
+
+    </nav>
+
+
+
+    <!-- =========================
+         HOME PAGE
+         ========================= -->
+
+    <main id="domainSection">
+
+        <section class="hero">
+
+            <div class="eyebrow">
+                MICROSOFT INNOVATION CLUB
+            </div>
+
+
+            <h1>
+                Build your
+                <span>Microsoft</span>
+                learning path.
+            </h1>
+
+
+            <p>
+                Choose your career goal and follow
+                a structured path of Microsoft
+                certifications and learning.
+            </p>
+
+        </section>
+
+
+
+        <section class="domain-section">
+
+            <h2>
+                What do you want to learn?
+            </h2>
+
+            <p class="section-subtitle">
+                Pick a domain to get started.
+            </p>
+
+
+
+            <div class="domain-grid">
+
+
+                <!-- CLOUD -->
+
+                <button
+                    class="domain-card"
+                    onclick="selectDomain('Cloud')">
+
+                    <div class="domain-icon">
+                        ☁
+                    </div>
+
+                    <h3>
+                        Cloud
+                    </h3>
+
+                    <p>
+                        Learn Azure and build
+                        cloud computing skills.
+                    </p>
+
+                    <span>
+                        Explore path →
+                    </span>
+
+                </button>
+
+
+
+                <!-- AI / DATA -->
+
+                <button
+                    class="domain-card"
+                    onclick="selectDomain('AI/Data')">
+
+                    <div class="domain-icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        AI / Data
+                    </h3>
+
+                    <p>
+                        Explore Azure AI,
+                        data and Fabric.
+                    </p>
+
+                    <span>
+                        Explore path →
+                    </span>
+
+                </button>
+
+
+
+                <!-- SECURITY -->
+
+                <button
+                    class="domain-card"
+                    onclick="selectDomain('Security')">
+
+                    <div class="domain-icon">
+                        ◈
+                    </div>
+
+                    <h3>
+                        Security
+                    </h3>
+
+                    <p>
+                        Build cybersecurity,
+                        identity and security skills.
+                    </p>
+
+                    <span>
+                        Explore path →
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         LEARNING PATH PAGE
+         ========================= -->
+
+    <main
+        id="pathSection"
+        class="path-section">
+
+        <section class="path-wrapper">
+
+
+            <button
+                class="back-btn"
+                onclick="goHome()">
+
+                ← Choose another domain
+
+            </button>
+
+
+
+            <!-- HEADER -->
+
+            <div class="path-header">
+
+                <div>
+
+                    <div class="eyebrow">
+                        RECOMMENDED LEARNING PATH
+                    </div>
+
+                    <h1 id="domainTitle">
+                        Cloud
+                    </h1>
+
+                    <p id="domainDescription">
+                        Build your Azure skills.
+                    </p>
+
+                </div>
+
+
+
+                <!-- PROGRESS -->
+
+                <div class="progress-card">
+
+                    <div class="progress-top">
+
+                        <span>
+                            Your progress
+                        </span>
+
+                        <strong id="progressText">
+                            0%
+                        </strong>
+
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div
+                            id="progressFill">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- AI GUIDE -->
+
+            <div class="ai-box">
+
+                <div class="ai-symbol">
+                    ✦
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        AI Learning Guide
+                    </strong>
+
+                    <p id="aiMessage">
+
+                        Complete an available step
+                        and I'll explain why your
+                        next step makes sense.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PATH -->
+
+            <div
+                id="pathContainer"
+                class="path-container">
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

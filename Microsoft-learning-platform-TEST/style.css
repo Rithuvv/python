@@ -1,0 +1,966 @@
+/* =====================================================
+   MICROSOFT LEARNING HUB
+   COMPLETE CSS
+===================================================== */
+
+
+/* ==============================
+   RESET
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef6ff,
+            #f8fbff,
+            #eef4ff
+        );
+
+    color: #1f2937;
+
+    min-height: 100vh;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* ==============================
+   NAVBAR
+============================== */
+
+.navbar {
+
+    width: 100%;
+
+    padding: 18px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background:
+        rgba(255,255,255,0.96);
+
+    border-bottom:
+        1px solid #e5e7eb;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    backdrop-filter:
+        blur(10px);
+
+}
+
+
+.logo {
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    color: #1f4e79;
+
+}
+
+
+.home-btn {
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding:
+        9px 17px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+
+/* ==============================
+   MAIN
+============================== */
+
+main {
+
+    width: 100%;
+
+    min-height:
+        calc(100vh - 140px);
+
+}
+
+
+.section {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 55px 0;
+
+}
+
+
+
+/* ==============================
+   DASHBOARD
+============================== */
+
+#progressDashboard {
+
+    width: 90%;
+
+    max-width: 850px;
+
+    margin: 30px auto;
+
+}
+
+
+.dashboard-box {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    margin: auto;
+
+    padding:
+        25px 30px;
+
+    border-radius: 18px;
+
+    background: white;
+
+    border:
+        2px solid #1f2937;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,0.08);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+}
+
+
+.dashboard-title {
+
+    text-align: center;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    margin-bottom: 28px;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+}
+
+
+.dashboard-domain {
+
+    margin-bottom: 24px;
+
+}
+
+
+.dashboard-domain-name {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    margin-bottom: 5px;
+
+}
+
+
+.dashboard-domain-name span {
+
+    margin-left: auto;
+
+}
+
+
+.dashboard-bar {
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size: 16px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+}
+
+
+.dashboard-streak {
+
+    margin-top: 10px;
+
+    margin-bottom: 25px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+}
+
+
+.dashboard-achievements {
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+}
+
+
+.achievement-item {
+
+    margin-top: 10px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+
+.no-achievement {
+
+    margin-top: 10px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+}
+
+
+
+/* ==============================
+   HERO
+============================== */
+
+.hero {
+
+    text-align: center;
+
+    max-width: 750px;
+
+    margin:
+        20px auto 50px;
+
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(30px, 5vw, 50px);
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+
+    color: #123b63;
+
+}
+
+
+.hero p {
+
+    font-size: 18px;
+
+    color: #64748b;
+
+}
+
+
+
+/* ==============================
+   DOMAIN CARDS
+============================== */
+
+.domain-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 25px;
+
+}
+
+
+.domain-card {
+
+    background: white;
+
+    border-radius: 22px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border:
+        1px solid #e2e8f0;
+
+    box-shadow:
+        0 10px 30px
+        rgba(15,23,42,0.08);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s,
+        box-shadow 0.25s;
+
+}
+
+
+.domain-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 18px 40px
+        rgba(15,23,42,0.14);
+
+}
+
+
+.domain-icon {
+
+    font-size: 48px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.domain-card h2 {
+
+    color: #1e40af;
+
+    margin-bottom: 10px;
+
+}
+
+
+.domain-card p {
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.domain-card button {
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding:
+        10px 18px;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+
+/* ==============================
+   PATH HEADER
+============================== */
+
+.path-header {
+
+    text-align: center;
+
+    margin:
+        25px auto 30px;
+
+    max-width: 800px;
+
+}
+
+
+.path-header h1 {
+
+    font-size: 38px;
+
+    color: #123b63;
+
+}
+
+
+.path-header p {
+
+    color: #64748b;
+
+}
+
+
+
+/* ==============================
+   BACK BUTTON
+============================== */
+
+.back-btn {
+
+    border: none;
+
+    background: transparent;
+
+    color: #2563eb;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+
+/* ==============================
+   PROGRESS
+============================== */
+
+.progress-section {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    max-width: 850px;
+
+    margin:
+        0 auto 25px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(15,23,42,0.07);
+
+}
+
+
+.progress-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    font-weight: 700;
+
+}
+
+
+.progress-bar {
+
+    width: 100%;
+
+    height: 12px;
+
+    background: #e5e7eb;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+
+.progress-fill {
+
+    width: 0%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #2563eb,
+            #38bdf8
+        );
+
+    border-radius: 20px;
+
+    transition:
+        width 0.5s ease;
+
+}
+
+
+
+/* ==============================
+   AI MESSAGE
+============================== */
+
+.ai-message {
+
+    max-width: 850px;
+
+    margin:
+        0 auto 30px;
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff,
+            #f0f9ff
+        );
+
+    border:
+        1px solid #bfdbfe;
+
+    color: #1e3a8a;
+
+}
+
+
+
+/* ==============================
+   CERTIFICATION PATH
+============================== */
+
+.path-container {
+
+    max-width: 850px;
+
+    margin: auto;
+
+}
+
+
+.cert-card {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 25px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    border:
+        1px solid #e2e8f0;
+
+    box-shadow:
+        0 8px 25px
+        rgba(15,23,42,0.07);
+
+}
+
+
+.cert-left {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    flex: 1;
+
+}
+
+
+.step-number {
+
+    width: 42px;
+
+    height: 42px;
+
+    min-width: 42px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+    font-weight: 800;
+
+}
+
+
+.cert-card h3 {
+
+    font-size: 19px;
+
+    margin-bottom: 8px;
+
+    color: #1e3a5f;
+
+}
+
+
+.cert-card p {
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+/* ==============================
+   STATUS
+============================== */
+
+.status {
+
+    display: inline-block;
+
+    padding:
+        5px 11px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.status.available {
+
+    background: #dcfce7;
+
+    color: #166534;
+
+}
+
+
+.status.completed {
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+}
+
+
+.status.locked {
+
+    background: #f1f5f9;
+
+    color: #64748b;
+
+}
+
+
+
+/* ==============================
+   CERTIFICATION BUTTONS
+============================== */
+
+.cert-actions {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    min-width: 170px;
+
+}
+
+
+.start-learning-btn {
+
+    display: block;
+
+    padding:
+        10px 15px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    background: #0f6cbd;
+
+    color: white;
+
+}
+
+
+.complete-btn {
+
+    border: none;
+
+    padding:
+        10px 15px;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+.complete-btn:disabled {
+
+    background: #cbd5e1;
+
+    color: #64748b;
+
+    cursor: not-allowed;
+
+}
+
+
+
+/* ==============================
+   CONNECTOR
+============================== */
+
+.connector {
+
+    width: 3px;
+
+    height: 35px;
+
+    background: #bfdbfe;
+
+    margin-left: 45px;
+
+}
+
+
+
+/* ==============================
+   COMPLETION
+============================== */
+
+.completion-message {
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ecfdf5,
+            #f0fdf4
+        );
+
+    border:
+        1px solid #bbf7d0;
+
+    color: #166534;
+
+    text-align: center;
+
+}
+
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    margin-top: 30px;
+
+    border-top:
+        1px solid #e5e7eb;
+
+    background:
+        rgba(255,255,255,0.8);
+
+    color: #64748b;
+
+    font-size: 13px;
+
+}
+
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 800px) {
+
+    .domain-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .cert-card {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .cert-actions {
+
+        width: 100%;
+
+        min-width: 0;
+
+    }
+
+
+    .start-learning-btn,
+    .complete-btn {
+
+        width: 100%;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .logo {
+
+        font-size: 16px;
+
+    }
+
+
+    .section {
+
+        width: 92%;
+
+    }
+
+
+    .cert-card {
+
+        padding: 18px;
+
+    }
+
+
+    #progressDashboard {
+
+        width: 92%;
+
+    }
+
+}
